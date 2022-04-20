@@ -16,7 +16,7 @@
     </div>
 
     <div>
-      <p class="subTitle">Top 4 products</p>
+      <p class="subTitle">Top 3 products</p>
     </div>
     <!-- <div class="flex-containerTopDash">
       <div
