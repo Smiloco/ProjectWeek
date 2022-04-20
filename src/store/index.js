@@ -39,14 +39,14 @@ export default new Vuex.Store({
         logout(state) {
             state.user.isAuthenticated = false;
             state.user.name = "";
-            state.user.email = "";
-            state.user.idToken = "";
+            state.user.email ="";
+            state.user.idToken ="";
         },
         login(state, payload) {
             state.user.isAuthenticated = true;
             state.user.name = payload.name;
-            state.user.email = payload.email;
-            state.user.idToken = payload.idToken;
+            state.user.email =payload.email;
+            state.user.idToken =payload.idToken;
         },
         setUrls(state) {
             state.endpoints.login = process.env.VUE_APP_AUTH_URL;
@@ -63,5 +63,6 @@ export default new Vuex.Store({
             console.log(prods);
         }
     },
-    modules: {}
+    modules: {
+    }
 })
