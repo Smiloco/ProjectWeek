@@ -45,8 +45,12 @@ background-image: url("https://images.wallpaperscraft.com/image/single/leaves_da
 background-position: center bottom;
 background-repeat: no-repeat;
 background-size: cover;
+width: 100%;
+
 
 }
+
+
 
 
 </style>

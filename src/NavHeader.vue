@@ -1,23 +1,48 @@
 <template>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
-  <div class="container">
-    <router-link to="/" >
-      <img src="./assets/kodama_logo_white.jpg" class="foto" />
-    </router-link>
-      <ul class="navbar-nav mr-auto">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
+    <div class="container">
+      <div>
+        <router-link to="/">
+          <img src="./assets/kodama_logo_white.jpg" class="foto" />
+        </router-link>
+      </div>
+
+      <ul class="navbar-nav mr-auto" >
+
+        <router-link
+          to="/products"
+          class="navbar-brand mr-auto nav-items nav-nopa"
+          >Store
+        </router-link>
+       
       </ul>
       <ul class="nav navbar-nav">
-        <router-link to="/" tag="li" v-if="!isAuthenticated" class="nav-item" active-class="active">
+        <router-link
+          to="/"
+          tag="li"
+          v-if="!isAuthenticated"
+          class="nav-item"
+          active-class="active"
+        >
           <a @click="onLoginClicked" class="nav-link">Login</a>
         </router-link>
         <li v-if="isAuthenticated" class="li-pointer nav-item">
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               {{ getUserName() }}
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#">Account Settings</a>
-              <a @click="onLogoutClicked" class="dropdown-item">Logout {{ userEmail }}</a>
+              <a @click="onLogoutClicked" class="dropdown-item"
+                >Logout {{ userEmail }}</a
+              >
             </div>
           </div>
         </li>
@@ -25,18 +50,18 @@
           <ShoppingCart />
         </li>
       </ul>
-  </div>
-</nav>
+    </div>
+  </nav>
 </template>
 
 <script>
-import ShoppingCart from './ShoppingCart.vue';
+import ShoppingCart from "./ShoppingCart.vue";
 export default {
   components: { ShoppingCart },
-  name: 'NavHeader',
+  name: "NavHeader",
   computed: {
     userEmail() {
-      return this.isLoggedIn ? this.currentUser.email : ''
+      return this.isLoggedIn ? this.currentUser.email : "";
     },
     isAuthenticated() {
       return this.$store.state.user.isAuthenticated;
@@ -51,18 +76,27 @@ export default {
     },
     getUserName() {
       return this.$store.state.user.name;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
-
 .foto {
   width: 20%;
   margin: 0;
   text-align: left;
   padding: 0;
+  padding: 0;
 }
 
+.nav-nopa {
+  margin-left: 10%;
+  font-size: 100%;
+  
+}
+
+.nav-items {
+  text-align: left;
+}
 </style>
