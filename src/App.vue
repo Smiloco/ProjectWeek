@@ -1,21 +1,21 @@
 <template>
-  <div id="app" class="hero-image " >
+  <div id="app" >
     <NavHeader />
-    <router-view/>
+    <router-view class="hero-image" />
   </div>
 </template>
 	
 <script>
-import NavHeader from "@/NavHeader.vue"
+import NavHeader from "@/NavHeader.vue";
 export default {
   components: {
-    NavHeader
+    NavHeader,
   },
-  mounted(){
+  mounted() {
     this.$store.commit("setUrls");
     this.$store.dispatch("getProducts");
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -41,16 +41,10 @@ export default {
 }
 
 .hero-image {
-background-image: url("https://images.wallpaperscraft.com/image/single/leaves_dark_plant_128531_3840x2400.jpg");
-background-position: center bottom;
-background-repeat: no-repeat;
-background-size: cover;
-width: 100%;
-
-
+  background-image: url("https://images.wallpaperscraft.com/image/single/leaves_dark_plant_128531_3840x2400.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
-
-
-
-
 </style>
