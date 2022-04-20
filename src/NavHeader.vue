@@ -15,11 +15,11 @@
     <li class="nav-item">
       <router-link
 to="/products"
-          class="nav-item"
+          class="nav-item" active-link="active"
           ><a  class="nav-link">Store</a>
         </router-link>
         </li>
-           <li class="nav-item">
+           <li class="nav-item" >
           <router-link to="/" tag="li" v-if="!isAuthenticated" class="nav-item">
             <a @click="onLoginClicked" class="nav-link">Login</a>
           </router-link>
@@ -90,4 +90,8 @@ export default {
 .nav-items {
   text-align: left;
 }
+.router-link-exact-active a {
+  font-color:#FFFFFF;
+}
+
 </style>
