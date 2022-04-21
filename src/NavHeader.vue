@@ -12,6 +12,16 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav ml-auto">
+
+    <li class="nav-item">
+      <router-link
+to="/Sos"
+          class="nav-item" active-link="active"
+          ><a  class="nav-link">Sos</a>
+        </router-link>
+        </li>
+
+
     <li class="nav-item">
       <router-link
 to="/products"

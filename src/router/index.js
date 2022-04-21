@@ -3,8 +3,10 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../Login.vue'
 import LandingPage from '../views/LandingPage.vue'
+import Sos from '../views/Sos.vue'
 
 import About from '../views/About.vue'
+
 
 Vue.use(VueRouter)
 
@@ -16,6 +18,7 @@ const routes = [{
     { path: '/loginwithtoken', name: 'loginwithtoken', component: Login },
     { path: '/about', name: 'about', component: About },
     { path: '/products', name: 'products', component: Home },
+    {path: '/sos', name: 'sos', component: Sos },
 ]
 
 const router = new VueRouter({
