@@ -6,12 +6,7 @@
 
     <div class="font-par">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus
-        varius elit, eget scelerisque ex rutrum a. Vestibulum dictum risus ut
-        accumsan dictum. Fusce a dignissim ipsum, ac ullamcorper quam. Sed
-        commodo urna mauris, a facilisis turpis sollicitudin quis. Nullam vel
-        tortor vel sapien eleifend consequat sed eget tellus. Duis nec tellus
-        non lectus feugiat sagittis.
+       Kodama is a green company that helps you take care of your plants. You can ask questions about your plants or purchase new ones. To get the full benefit of our service you can subscribe to a premium membership. Here you will get all the help you need to take care of your green plants.
       </p>
     </div>
 
