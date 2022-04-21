@@ -11,6 +11,15 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <router-link
+to="/membership"
+          active-link="active" class="text-warning mt-3 ml-5" id="membership"
+          >
+          <p>Get your membership now!</p>
+        </router-link>
+       
+
     <ul class="nav navbar-nav ml-auto">
 
     <li class="nav-item">
@@ -103,5 +112,7 @@ export default {
 .router-link-exact-active a {
   font-color:#FFFFFF;
 }
+
+
 
 </style>

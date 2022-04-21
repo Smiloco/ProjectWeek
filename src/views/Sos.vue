@@ -35,8 +35,15 @@ export default {};
     margin-top: 10%;
     margin-left: 20%;
     margin-right: 20%;
+    height: 75%;
 }
 body{
     height:100vh
+
 }
+
+footer{
+     position: relative;
+}
+
 </style>

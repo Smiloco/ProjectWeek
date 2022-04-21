@@ -1,4 +1,5 @@
 <template>
+
   <div id="app" class="hero-image " >
     <NavHeader />
     <router-view/>
